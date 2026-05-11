@@ -30,7 +30,7 @@ const initialState = {
   theme: getDefaultTheme() as "light" | "dark",
   colors: getDefaultColors(),
   backgroundImage: getImageBackgroundUrl(),
-  themeCss: new URL(`./src/assets/css/themes/${getDefaultColors()}.css`, import.meta.url).href,
+  themeCss: new URL(`../assets/css/themes/${getDefaultColors()}.css`, import.meta.url).href,
 };
 
 export const useConfigStore = defineStore('config', {
